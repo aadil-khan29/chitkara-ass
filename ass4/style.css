@@ -1,0 +1,125 @@
+  * {
+    margin: 0;
+    padding: 0;
+ }
+  
+  nav {
+    display: flex;
+    background-color: #2edd77;
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 55px;
+    position:sticky;
+}
+  nav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+  
+ 
+  
+  
+ nav ul,a {
+    float: center;
+	
+	  text-align: center;
+	  padding: 14px 16px;
+	  font-size: 17px;
+    text-decoration: none;
+    color: rgb(30, 83, 85);
+}
+  
+ nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid white; */
+    width: 500px;
+ }
+  
+  @media screen and (max-width: 600px) {
+    nav , ul {
+      flex-direction: row;
+      align-items: center;
+    }}
+
+    .slider {
+      width: 80%;
+      height: 600px;
+      position:relative ;
+      
+      left: 50%;
+      top: 320px;
+      transform: translate(-50% , -50%);
+      background-image: url('https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFnfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60') ;
+      background-size: 100% 100%;
+      
+      animation: slider 10s infinite linear;
+  
+    }
+    @keyframes slider{
+      0% {background-image: url('https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFnfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60') ;
+          }
+      35%{background-image: url('https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+  
+      }
+      75%{background-image: url('https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+  
+      }
+    }
+
+
+    section{
+      font-family: Arial, Helvetica, sans-serif;
+      width: 75vw;
+      margin:30px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  } 
+  
+  figure{
+    width: 300px;
+    border:1px solid #ccc;
+    margin:20px;
+    text-align: center;
+    box-shadow: 0px 0px 3px rgb(104,104,104);
+    transition: 100ms;
+}
+figcaption button{
+  padding: 10px 20px;
+  margin:10px;
+  font-size: 16px;
+  border:1px solid rgb(236, 47, 47);
+  border-radius: 5px;
+  background:none;
+}
+
+figcaption button:hover{
+  background: lightslategray;
+  color:white;
+  cursor: pointer;
+}
+figure:hover {
+  border:1px solid #2edd77 
+
+}
+figure img{
+  width: 300px;
+  height: 200px;
+}
+footer {
+  text-align: center;
+  height: 150px;
+  background-color: #2edd77;
+  color: black;
+}
+footer  ul  {
+  text-align: left;
+
+}
+     
+
+ 
